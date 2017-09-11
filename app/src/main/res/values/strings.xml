@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Words</string>
+    <string name="frills">Frills</string>
+    <string name="frill_rules">Rules frills</string>
+    <string name="frill_minute_settings">Minutes</string>
+    <string name="frill_seconds_settings">Seconds</string>
+    <string name="frill_button_play_settings">PLAY!</string>
+    <string name="frill_button_replay">Replay</string>
+    <string name="frill_button_finish">Finish Game</string>
+    <string name="frill_success">Success:</string>
+    <string name="frill_failure">Unsuccess:</string>
+
+</resources>

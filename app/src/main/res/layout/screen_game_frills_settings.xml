@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/base1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/frill_minute_settings"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/etMinutes"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/tvMinutes"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/base1">
+
+        <TextView
+            android:id="@+id/tvSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/frill_seconds_settings"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/etSeconds"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:layout_toRightOf="@+id/tvSeconds"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/frill_button_play_settings"/>
+</RelativeLayout>

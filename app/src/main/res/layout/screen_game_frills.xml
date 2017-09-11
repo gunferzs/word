@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlBase">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/timer"
+        android:gravity="center"
+        android:textSize="45sp"/>
+    <RelativeLayout
+        android:id="@+id/rlStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/finishLayout"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="30sp"
+            android:text="@string/frill_success"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/tvSuccessValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:textSize="30sp"
+            android:layout_toRightOf="@+id/tvSuccess"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/tvFailure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSuccess"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:text="@string/frill_failure"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/tvFailureValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSuccess"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"
+            android:layout_toRightOf="@+id/tvFailure"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/finishLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/frill_button_finish"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/btnReplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/frill_button_replay"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

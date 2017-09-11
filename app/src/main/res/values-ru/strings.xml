@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Words</string>
+    <string name="frills">Выкрутасы</string>
+    <string name="frill_rules">Правила выкрутасов</string>
+    <string name="frill_minute_settings">Минуты</string>
+    <string name="frill_seconds_settings">Секунды</string>
+    <string name="frill_button_play_settings">ИГРАТЬ!</string>
+    <string name="frill_button_replay">Заново</string>
+    <string name="frill_button_finish">Закончить игру</string>
+    <string name="frill_success">Успешные:</string>
+    <string name="frill_failure">Безуспешные:</string>
+</resources>
